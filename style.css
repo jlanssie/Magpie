@@ -1,0 +1,422 @@
+/*
+Theme Name: MagpieZero
+Description: A simple blog theme
+Version: 1.0
+
+Author: Jeremy Lanssiers
+Author URI: https:www.jeremylanssiers.com
+*/
+
+* {
+	padding:0;
+	border: 0;
+	margin: 0;
+}
+
+/*Default classes*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	background-color: #f70d8a;
+	font-family: Courier, serif;
+	font-size: 1em;
+	color: #1f1f1f;
+}
+
+h1 {
+	padding: 1em 0 0 0;
+	font-size: 2em;
+}
+
+h2 {
+	padding: 1em 0 0 0;
+	font-size: 1.5em;
+}
+
+p {
+	padding: 1em 0 1em 0;
+}
+
+footer {
+	clear:both;
+	display:block;
+	height:5em;
+	background-color: #f70d8a;
+	color: #222222;
+}
+
+/*Generic classes*/
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.center {
+	display: block;
+	margin: 0 auto;
+}
+
+.sansSerif {
+	text-transform: uppercase;
+	font-family: Helvetica, sans-serif;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+/*Regular classes*/
+
+.menu ul {
+	display: inherit;
+	visibility: inherit;
+	background-color: #222222;
+}
+
+.notClicked .menu ul {
+	display: none;
+	visibility: hidden;
+}
+
+.clicked .menu ul {
+	display: block;
+	visibility: visible;
+}
+
+.menu-main-menu-container {
+	    padding: 0 0 1em 1em;
+}
+
+.menu li {
+	display: block;
+    visibility: inherit;
+	padding: 1em 1em 1em 1em;
+	background-color: #222222;
+	color:#ffffff;
+    list-style-type: none;
+}
+
+.menu li:hover {
+	background-color: #ffffff;
+	color: #1f1f1f;
+}
+
+.menu li a {
+	text-decoration-line: none;
+	text-transform: uppercase;
+	font-family: Helvetica, sans-serif;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color:inherit;
+}
+
+h1.beforeAfter:before {
+    display: flex;
+    border-top: 5px solid #f70d8a;
+    width: 75%;
+	height: .5em;
+    content: "";
+}
+
+.comments-area:before {
+    display: flex;
+    border-top: 5px solid #f70d8a;
+    width: 100%;
+	height: .5em;
+    content: "";
+}
+
+h1.beforeAfter:after, .comment-body:after {
+    display: flex;
+    border-top: .5em solid white;
+    border-bottom: 5px solid #f70d8a;
+    width: 2.5%;
+    content: "";
+}
+
+.comment-body p {
+	padding: 1em;
+}
+
+.pager {
+	width: 100%;
+    text-align: center;
+}
+
+.next, .previous {
+	display: inline-block;
+	margin: 1em 0 1em 0;
+	padding: 1em;
+	min-width: 100px;
+	background-color: #f70d8a;
+	color: #000000;
+}
+
+.next:hover, .previous:hover {
+	background-color: #222222;
+	color: #ffffff;
+}
+.next a, .previous a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Helvetica, sans-serif;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: inherit;
+}
+
+.metaContent {
+	font-size: .75em;
+}
+
+.separator {
+    height: 2em;
+}
+
+.comments-title {
+	text-transform: uppercase;
+	font-family: Helvetica, sans-serif;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+li.comment {
+	display: block;
+}
+
+div.comment-meta, div.commentmetadata, div.comment-author img, div.vcard img {
+	display: none;
+}
+
+cite.fn a, span.says, .reply a, .logged-in-as a {
+    text-transform: uppercase;
+    font-weight: 700;
+	font-size: .75em;
+	font-style: normal;
+	color: #1f1f1f;
+	letter-spacing: 1px;
+}
+
+.reply {
+	display: none;
+}
+
+#reply-title, .comment-notes, .required, .comment-form-author, .comment-form-email, .comment-form-url, .comment-form-comment, .comment-form-cookies-consent, 
+.form-allowed-tags, .form-submit, #submit {
+	text-transform: uppercase;
+	font-family: Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: .75em;
+	letter-spacing: 1px;
+}
+
+p.comment-notes {
+	display: none;
+}
+
+p.comment-form-comment label, p.comment-form-author label {
+	display: block;
+}
+
+.comment-form-email {
+	display: none;
+}
+
+.comment-form-url {
+	display: none;
+}
+
+.form-submit {
+    text-align: center;
+}
+
+.social {
+	float: left;
+	padding: 2em;
+}
+
+.social a img {
+	vertical-align: middle;
+}
+
+.copyright {
+	padding: 2em;
+	text-align: right;
+	color: #000000;
+}
+
+/*Unique elements*/
+
+#header {
+	padding: 3em 0 3em 0; 
+	width:100%;
+	background-color: #f70d8a;
+}
+
+#headerBoxWrapper, #header h1, #header p {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#headerBox {
+	display: inline-block;
+	padding:1em;
+	color: #1f1f1f;
+}
+
+#header h1 {
+	font-size: 3em;
+	color: #ffffff;
+}
+
+#header p {
+	color: #000000;
+}
+
+h1 a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    right: 0;
+	z-index: 99;
+	background-color: transparent;
+}
+
+#navToggle {
+	position: absolute;
+    right: 0;
+    top: 0;
+    width: max-content;
+	color: #f1f1f1;
+	background-color: #222222;
+}
+
+#navToggle a {
+	text-transform: uppercase;
+	text-decoration-line: none;
+	font-family: Helvetica, sans-serif;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color:inherit;
+}
+
+#navToggle a:hover {
+	color: #1f1f1f;
+	background-color: #ffffff;
+}
+
+#navToggle-btn {
+	padding: 1em 0 0 0;
+	width: 50px;
+	height: calc(50px - 1em);
+    text-align: center;
+}
+
+#navToggle.notClicked div {
+	display: none;
+	visibility: hidden;
+}
+
+#navToggle.clicked div {
+	display: inline-block;
+    visibility: visible;
+    float: right;
+    clear: right;
+}
+
+#mainContainer {
+	background-color: #ffffff;
+}
+
+#mainWrapper {
+	margin: 0 auto;
+	padding: 1em;
+	max-width: 480px;
+}
+
+#comments, #respond {
+    padding: 1em 0 0 0;
+}
+
+#reply-title {
+	display: none;
+}
+
+#author, #email, #url, #comment {
+	border: 1px solid #f1f1f1;
+	border-radius: 1px;
+	width: 100%;
+}
+
+#submit {
+	padding: 1em;
+	background-color: #f70d8a;
+	font-size: 1em;
+	color:#222222;
+}
+
+#submit:hover {
+	background-color: #222222;
+	color:#ffffff;
+}
+
+
+/*Media queries*/
+
+@media all and (max-width: 1024px) { 
+	
+}
+
+@media all and (max-width: 839px) {  
+
+	footer {
+			margin-bottom: 48px;
+		}
+
+	.copyright {
+		margin-bottom: 48px;
+	}
+} 
+
+@media screen and (max-width: 480px){
+
+	#header h1 {
+		font-size: 2em;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+	.separator {
+		width: 100%;
+	}
+
+	p.comment-form-comment textarea, p.comment-form-author input {
+		width: 100%;
+	}
+
+	.form-submit {
+	    width: 100%;
+	}
+	.social, .copyright {
+		float: none;
+		padding: 1em 1em 0 1em;
+		text-align: center;
+		font-size: 1em;
+	}
+
+	.copyright {
+		margin-bottom: calc(48px + 1em);
+	}
+}
