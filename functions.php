@@ -7,7 +7,7 @@ function register_my_menu() {
 
 add_action( 'init', 'register_my_menu' );
 
-//Set homepage url in variable
+//Store homepage url in variable
 global $wp;
 $current_url = home_url( add_query_arg( array(), $wp->request ) );
 

@@ -14,6 +14,37 @@
     <link rel="manifest" href="<?php echo get_bloginfo( 'template_directory' );?>/manifest.json">
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_bloginfo( 'template_directory' );?>/favicon.ico" />
     <link href="<?php echo get_bloginfo( 'template_directory' );?>/style.css" rel="stylesheet">
+    <style type="text/css">
+		body {
+			line-height: 2em;
+		}
+		p {
+			padding:0;
+		}
+		h1 {
+			padding: 0;
+		}
+		h1:before, h1:after {
+		    display: flex;
+		    margin: .5em auto 0;
+		    border-top: 5px solid #f70d8a;
+		    height: .5em;
+		    vertical-align: bottom;
+		    content: "";
+		}
+		h1:before {
+			width:25%;
+		}
+		h1:after {
+			width: 75%;
+		}
+		h1:hover {
+			color: unset;
+		}
+		#mainWrapper {
+			max-width: unset; width:calc(650px - 2em);padding: 5vh 0 0 0;
+		}
+	</style>
     <meta property="og:title" content="<?php echo get_bloginfo('name'); ?>" />
     <meta property="og:description" content="<?php echo get_bloginfo( 'description' );?>" />
 	<meta property="og:image" content="<?php echo get_bloginfo('template_directory'); ?>ogImage.jpg" />
@@ -34,26 +65,14 @@
     <![endif]-->
 	<?php wp_head();?>
 </head>
-<body>
-<!--googleoff: all-->
-	<div id="navbar">
-		<div id="navToggle" class="notClicked">
-			<a href="javascript:void(0);" id="navToggle-btn" class="right" onclick="menuCollapse()">&#9776;</a>
-			<?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
-        </div>
-	</div>
-<!--googleon: all-->
-	<div id="header">
-		<div id="headerBoxWrapper" class="centerTxt">
-			<a href="<?php echo get_bloginfo( 'wpurl' );?>">
-				<div id="headerBox">
-					<h1 class="sansSerif">
-						<?php echo get_bloginfo('name'); ?>
-					</h1>
-					<p><?php echo get_bloginfo('description'); ?></p>
-				</div>
-			</a>
+<body style="background-color: #fff;">
+	<div id="mainContainer">
+			<div id="mainWrapper">
+	            <h1 class="sansSerif centerTxt">404, A.K.A. NOT FUCKING FOUND</h1>
+	            <img src="https://www.jeremylanssiers.com/assets/samuelLJackson.gif" style="display: block; margin: 0 auto; height: 250px;">
+	            <p>The fucking page you were looking for wasn't fucking found. Don't waste this server's fucking time, motherfucker. Or I will strike down upon thee with great vegeance and furious anger. And you will know, my name is the LORD!</p>
+	            <p>Sincerely, <a href="https://www.jeremylanssiers.com" target="self">www.jeremy fucking lanssiers.com</a></p>
+	        </section>
 		</div>
 	</div>
-	<div id="mainContainer">
-		<div id="mainWrapper">
+</body>

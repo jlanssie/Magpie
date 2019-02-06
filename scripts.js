@@ -1,3 +1,5 @@
+//Menu toggle
+
 function menuCollapse() {
     var x = document.getElementById("navToggle");
     if (x.className === "notClicked") {

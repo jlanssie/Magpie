@@ -2,12 +2,6 @@
 
 <?php the_content(); ?>
 
-<p class="metaContent sansSerif">Door <?php the_author(); ?> 
-	<?php if(the_date()) : ?>
-		<?php echo ", published" + the_date('F j, Y'); ?>
-	<?php else : ?>
-		<?php echo "&nbsp;"; ?>
-	<?php endif; ?>
-</p>
+<p class="metaContent sansSerif">By <?php the_author(); ?></p>
 
 <div class="separator"></div>
