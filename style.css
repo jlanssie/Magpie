@@ -523,6 +523,13 @@ ol.commentlist {
 		display: block;
 		float: left;
 	}
+
+	#author,
+	#email,
+	#url,
+	#comment {
+		width: calc(100% - 2em);
+	}
 } 
 
 @media screen and (max-width: 480px){
