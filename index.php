@@ -5,7 +5,7 @@
 		the_post();
 		get_template_part( 'content', get_post_format() );
 	endwhile;
-?>
+?> 
 
 	<nav>
 		<ul class="pager">
