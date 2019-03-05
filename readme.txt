@@ -1,4 +1,4 @@
-=== MagpieZero ===
+=== MagpieZero Wordpress Theme ===
 Contributors: Jeremy Lanssiers
 Donate link: 
 Tested up to: 5.0
