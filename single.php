@@ -1,15 +1,17 @@
-<?php get_header(); ?>
+<?php esc_html( get_header() ); ?>
 
 <?php if ( have_posts() ) :
 	while ( have_posts() ) : 
 		the_post();
-		get_template_part( 'content', get_post_format() );
+		esc_html( get_template_part( 'content', get_post_format() ) );
 	endwhile;
 	endif;
 ?>
 
+<?php the_tags( $sep, $after ); ?> 
+
 <?php comments_template(); ?>
 
-<?php get_footer(); ?>
+<?php esc_html( get_footer() ); ?>
 
-<?php get_sidebar(); ?>
+<?php esc_html( get_sidebar() ); ?>

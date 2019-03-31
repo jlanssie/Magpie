@@ -1,7 +1,13 @@
 <h1 class="sansSerif beforeAfter"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
-<?php the_content(); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-<p class="metaContent sansSerif">By <?php the_author(); ?></p>
+	<?php the_content(); ?>
+
+	<?php esc_url( wp_link_pages( $linkPages ) ); ?>
+
+</article>
+
+<p class="metaContent sansSerif"><?php echo __('By ', 'magpie'); the_author(); ?></p>
 
 <div class="separator"></div>
