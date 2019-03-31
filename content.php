@@ -8,6 +8,6 @@
 
 </article>
 
-<p class="metaContent sansSerif"><?php echo __('By ', 'magpie'); the_author(); ?></p>
+<p class="metaContent sansSerif"><?php echo __('By ', 'poppoetryplace'); the_author(); ?></p>
 
 <div class="separator"></div>

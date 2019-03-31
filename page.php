@@ -11,12 +11,12 @@
 		<ul class="pager">
 			<?php
 			    if($link = get_previous_posts_link()) {
-			        echo previous_posts_link( __('Previous', 'magpie'));
+			        echo previous_posts_link( __('Previous', 'poppoetryplace'));
 			    }
 			?>
 			<?php
 				if($link = get_next_posts_link()) {
-			        echo next_posts_link( __('Next', 'magpie'));
+			        echo next_posts_link( __('Next', 'poppoetryplace'));
 			    }
 			?>
 		</ul>

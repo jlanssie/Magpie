@@ -16,7 +16,7 @@
 	<div id="navbar">
 		<div id="navToggle" class="notClicked">
 			<a href="javascript:void(0);" id="navToggle-btn" class="right sansSerif" onclick="menuCollapse()">&#9776;</a>
-			<?php wp_nav_menu(array('theme_location' => 'header-menu', 'magpie')); ?>
+			<?php wp_nav_menu(array('theme_location' => 'header-menu', 'poppoetryplace')); ?>
         </div>
 	</div>
 <!--googleon: all-->

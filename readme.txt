@@ -1,4 +1,4 @@
-=== Magpie Wordpress Theme ===
+=== Pop Poetry Place Wordpress Theme ===
 
 Contributors: Jeremy Lanssiers
 Tested up to: 5.0
