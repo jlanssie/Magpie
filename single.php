@@ -8,9 +8,15 @@
 	endif;
 ?>
 
-<?php the_tags( $sep, $after ); ?> 
+<div class="mainWrapper">
+	<div class="subWrapper">
 
-<?php comments_template(); ?>
+	<?php the_tags( $sep, $after ); ?> 
+
+	<?php comments_template(); ?>
+
+	</div>
+</div>
 
 <?php esc_html( get_footer() ); ?>
 

@@ -11,16 +11,18 @@
 		<ul class="pager">
 			<?php
 			    if($link = get_previous_posts_link()) {
-			        echo previous_posts_link( __('Previous', 'poppoetryplace'));
+			        echo previous_posts_link( __('Previous', 'poetry-laboetry'));
 			    }
 			?>
 			<?php
 				if($link = get_next_posts_link()) {
-			        echo next_posts_link( __('Next', 'poppoetryplace'));
+			        echo next_posts_link( __('Next', 'poetry-laboetry'));
 			    }
 			?>
 		</ul>
 	</nav>
+
+	<div class="separator"></div>
 
 <?php endif; ?>
 

@@ -10,3 +10,13 @@ function menuCollapse() {
         document.getElementById("navToggle-btn").innerHTML = "&#9776;";
     }
 };
+
+function postBackgroundSwitch() {
+	var x = document.getElementsByClassName("postWrapper");
+	var i; 
+	for (i = 1; i < x.length; i += 2) {
+		x[i].classList.add("alternateBackground");
+	}
+};
+
+window.onload = postBackgroundSwitch();

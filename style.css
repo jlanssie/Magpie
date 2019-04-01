@@ -1,12 +1,12 @@
 /*
-Theme Name: Pop Poetry Place
+Theme Name: Poetry Laboetry
 Theme URI: https://www.jeremylanssiers.com/powezielabo
 Description: A simple blog theme
 Version: 1.1
 
 Author: Jeremy Lanssiers
 Author URI: https:www.jeremylanssiers.com
-Text Domain: poppoetryplace
+Text Domain: poetry-laboetry
 Tags: blog
 
 License: GNU General Public License v2 or later
@@ -339,13 +339,13 @@ h1:hover {
 	background-color: #fff;
 }
 
-#mainWrapper {
+.mainWrapper {
 	margin: 0 auto;
 	max-width: calc(660px + 2rem + 5px);
 	text-align: center;
 }
 
-#subWrapper {
+.subWrapper {
 	clear: both;
 	display: inline-block;
 	margin: 0 auto;
@@ -381,10 +381,14 @@ h1:hover {
 }
 
 .separator {
-    height: 4em;
+    height: 2em;
 }
 
 /*Posts*/
+
+.alternateBackground {
+	background-color: #fafafa;
+}
 
 h1.beforeAfter:before {
     display: flex;
@@ -396,7 +400,7 @@ h1.beforeAfter:before {
 
 h1.beforeAfter:after {
     display: flex;
-    border-top: .5em solid white;
+    border-top: .5em solid transparent;
     border-bottom: 5px solid #f70d8a;
     width: 100%;
     content: "";
@@ -522,12 +526,16 @@ ol.commentlist {
 
 /*Sidebar*/
 
+.sidebarWrapper {
+	background-color: #fafafa;
+}
+
 #sidebar {
 	display: inline-block;
 	margin: 0 auto;
 	padding-top: 1em;
 	overflow: hidden;
-	width: calc(180px - 2em);
+	max-width: 480px;
 	text-align: left;
 	vertical-align: top;
 	color: #000;
@@ -666,18 +674,12 @@ ol.commentlist {
 	font-size: .75em;
 }
 
-/*Wordpress-admin*/
+/*Wordpress-login*/
 
-body.wp-admin {
-	background-color: #fff;
-	font-family: Helvetica, sans-serif;
-	color: #222;
+#wpadminbar {
+	position: absolute;
 }
 
-body.wp-admin:hover {
-	background-color: unset;
-	color: unset;
-}
 
 /*Wordpress-required*/
 
@@ -711,13 +713,13 @@ body.wp-admin:hover {
 
 @media all and (max-width: 839px) {  
 
-	#mainWrapper {
+	.mainWrapper {
 		margin: 0 auto;
 		max-width: calc(480px + 2rem);
 		text-align: center;
 	}
 
-	#subWrapper {
+	.subWrapper {
 		display: block;
 	}
 

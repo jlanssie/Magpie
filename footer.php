@@ -1,8 +1,5 @@
-			</div>
-
-			<?php esc_html( get_sidebar() ); ?>
-
-		</div>
+		<?php esc_html( get_sidebar() ); ?>
+		
 	</div>
 	<div class="diamondWrapper">
 		<div class="diamondfff right"></div>
