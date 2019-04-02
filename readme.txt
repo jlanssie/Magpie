@@ -1,4 +1,4 @@
-=== Pop Poetry Place Wordpress Theme ===
+=== PPoetry Laboetry Wordpress Theme ===
 
 Contributors: Jeremy Lanssiers
 Tested up to: 5.0
