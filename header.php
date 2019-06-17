@@ -24,15 +24,15 @@
 		<div id="headerBoxWrapper" class="centerTxt">
 			<a href="<?php echo esc_url(site_url( )); ?>">
 				<div id="headerBox">
-					<h1 class="sansSerif centerTxt"><?php echo esc_textarea( get_bloginfo('name') ); ?></h1>
-					<p class="sansSerif centerTxt blackTxt"><?php echo esc_textarea( get_bloginfo('description') ); ?></p>
+					<h1 id="title" class="sansSerif centerTxt"><?php echo esc_textarea( get_bloginfo('name') ); ?></h1>
+					<p id="tagline" class="sansSerif centerTxt"><?php echo esc_textarea( get_bloginfo('description') ); ?></p>
 				</div>
 			</a>
 		</div>
 	</div>
 	<div class="diamondWrapper">
-		<div class="diamond000 left"></div>
-		<div class="diamondfff left"></div>
+		<div class="diamondPink left"></div>
+		<div class="diamondBlack left"></div>
 	</div>
 	<!--googleoff: all-->
 	<div id="socialShareWrapper">

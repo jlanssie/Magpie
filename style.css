@@ -30,7 +30,7 @@ body {
 	background-color: #f70d8a;
 	font-family: Courier, serif;
 	font-size: 1em;
-	color: #1f1f1f;
+	color: #fff;
 }
 
 h1 {
@@ -272,20 +272,20 @@ h1:hover {
 	color: #1f1f1f;
 }
 
-#header h1 {
+#title {
+	color: #fff;
 	font-size: 3em;
 }
 
-#header p,
-#header h1 {
-	color: #fff;
+#tagline {
+	color: #000;
 }
 
 .diamondWrapper {
 	background-color: #ffffff;
 }
 
-.diamond000 {
+.diamondPink {
 	z-index: 1;
 	position: relative;
  	top: -10px;
@@ -297,7 +297,7 @@ h1:hover {
  	height: 0;
  }
 
-.diamond000:after {
+.diamondPink:after {
 	z-index: 1;
 	content: '';
  	position: absolute;
@@ -309,19 +309,19 @@ h1:hover {
  	border-top-color: #f70d8a;
 }
 
-.diamondfff {
+.diamondBlack {
 	z-index: 1;
 	position: relative;
  	top: -10px;
  	display: inline-block;
 	margin-top: -10px;
  	border: 10px solid transparent;
- 	border-bottom-color: #fff;
+ 	border-bottom-color: #000;
  	width: 0;
  	height: 0;
  }
 
-.diamondfff:after {
+.diamondBlack:after {
 	z-index: 1;
 	content: '';
  	position: absolute;
@@ -330,13 +330,13 @@ h1:hover {
  	width: 0; 
  	height: 0; 
  	border: 10px solid transparent; 
- 	border-top-color: #fff;
+ 	border-top-color: #000;
 }
 
 /*Page*/
 
 #mainContainer {
-	background-color: #fff;
+	background-color: #000;
 }
 
 .mainWrapper {
@@ -354,6 +354,10 @@ h1:hover {
 	text-align: left;
 }
 
+.subWrapper a {
+	color: #1f1f1f;
+}
+
 .pager {
 	width: 100%;
     text-align: center;
@@ -365,7 +369,7 @@ h1:hover {
 	padding: 1em;
 	min-width: 100px;
 	background-color: #f70d8a;
-	color: #1f1f1f;
+	color: #000;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -387,7 +391,8 @@ h1:hover {
 /*Posts*/
 
 .alternateBackground {
-	background-color: #fafafa;
+	background-color: #fff;
+	color: #1f1f1f;
 }
 
 h1.beforeAfter:before {
@@ -465,7 +470,7 @@ span.says,
     font-family: Helvetica, sans-serif;
 	font-size: .75rem;
 	font-style: normal;
-	color: #1f1f1f!important;
+	color: #fff!important;
 	letter-spacing: 1px;
 }
 
@@ -515,7 +520,7 @@ ol.commentlist {
 	padding: 1em;
 	background-color: #f70d8a;
 	font-size: 1em;
-	color:#1f1f1f;
+	color:#000;
 	cursor: pointer;
 }
 
@@ -670,6 +675,7 @@ ol.commentlist {
 .copyright {
 	padding: 1em;
 	width: 100%;
+	color: #fff;
 	text-align: right;
 	font-size: .75em;
 }

@@ -2,8 +2,8 @@
 		
 	</div>
 	<div class="diamondWrapper">
-		<div class="diamondfff right"></div>
-		<div class="diamond000 right"></div>
+		<div class="diamondBlack right"></div>
+		<div class="diamondPink right"></div>
 	</div>
 	<footer>
 	    <div class="copyright right sansSerif">
