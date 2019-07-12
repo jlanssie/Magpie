@@ -29,38 +29,38 @@ body {
 	width: 100%;
 	background-color: #f70d8a;
 	font-family: Courier, serif;
-	font-size: 1em;
+	font-size: 1rem;
 	color: #fff;
 }
 
 h1 {
 	padding: 1em 0 0 0;
-	font-size: 2em;
+	font-size: 2rem;
 }
 
 h2 {
 	padding: 1em 0 0 0;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 }
 
 h3 {
 	padding: 1em 0 0 0;
-	font-size: 1.25em;
+	font-size: 1.25rem;
 }
 
 h4 {
 	padding: 1em 0 0 0;
-	font-size: 1em;
+	font-size: 1rem;
 }
 
 h5 {
 	padding: 1em 0 0 0;
-	font-size: 1em;
+	font-size: 1rem;
 }
 
 h6 {
 	padding: 1em 0 0 0;
-	font-size: 1em;
+	font-size: 1rem;
 }
 
 p {
@@ -274,7 +274,7 @@ h1:hover {
 
 #title {
 	color: #fff;
-	font-size: 3em;
+	font-size: 3rem;
 }
 
 #tagline {
@@ -385,7 +385,7 @@ h1:hover {
 }
 
 .separator {
-    height: 2em;
+    height: 2rem;
 }
 
 /*Posts*/
@@ -399,7 +399,7 @@ h1.beforeAfter:before {
     display: flex;
     border-top: 5px solid #f70d8a;
     width: 25%;
-	height: .5em;
+	height: .5rem;
     content: "";
 }
 
@@ -412,7 +412,7 @@ h1.beforeAfter:after {
 }
 
 .metaContent {
-	font-size: .75em;
+	font-size: .75rem;
 }
 
 /*Comments*/
@@ -489,7 +489,7 @@ span.says,
 	text-transform: uppercase;
 	font-family: Helvetica, sans-serif;
 	font-weight: 700;
-	font-size: .75em;
+	font-size: .75rem;
 	letter-spacing: 1px;
 }
 
@@ -556,7 +556,7 @@ ol.commentlist {
 	padding: 0 0 .5em 0;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 1em!important;
+	font-size: 1rem!important;
 	font-family: Helvetica, sans-serif;
 	font-weight: 700;
 	letter-spacing: 1px;
@@ -571,7 +571,7 @@ ol.commentlist {
 }
 
 #wp-calendar thead, #wp-calendar tbody, #wp-calendar tfoot {
-	font-size: .75em;
+	font-size: .75rem;
 	text-align: center;
 }
 
@@ -633,17 +633,18 @@ ol.commentlist {
 	list-style-type: none;
 	height: 30px;
 	width: 30px;
-	background-color: #000;
+	background-color: #f70d8a;
+	border-right: 1px solid #000;
 }
 
 #socialShareWrapper div.socialShare div:hover {
-	background-color: #fafafa;
+	background-color: #fff;
 }
 
 #socialShareWrapper div.socialShare div a svg g path,
 #socialShareWrapper div.socialShare div a svg path,
 #socialShareWrapper div.socialShare div a svg circle {
-	fill:#fff;
+	fill:#1f1f1f;
 }
 
 #socialShareWrapper div.socialShare div:hover a svg g path,
@@ -756,17 +757,18 @@ ol.commentlist {
 	#socialShareWrapper div.socialShare div {
 		display: block;
 		float: left;
+		border: 0;
 	}
 } 
 
 @media screen and (max-width: 480px){
 
 	#header h1 {
-		font-size: 2em;
+		font-size: 2rem;
 	}
 
 	h1 {
-		font-size: 1.5em;
+		font-size: 1.5rem;
 	}
 
 	.separator {
