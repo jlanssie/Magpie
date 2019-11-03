@@ -1,4 +1,4 @@
-<div class="postBackgroundWrapper">
+<div class="postWrapper">
 	<div class="mainWrapper">
 		<div class="subWrapper">
 			<h1 class="sansSerif beforeAfter"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
