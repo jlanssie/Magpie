@@ -35,7 +35,7 @@ body {
 
 h1 {
 	padding: 1em 0 0 0;
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 h2 {
@@ -109,6 +109,7 @@ textarea:hover {
 footer {
 	clear:both;
 	display:block;
+	padding-bottom:  calc(57px + 1rem + 4em); /*AMEND*/
 	background-color: #f70d8a;
 }
 
@@ -266,6 +267,10 @@ h1:hover {
 	background-color: #f70d8a;
 }
 
+#header h1 {
+		font-size: 2rem;
+	}
+
 #headerBox {
 	display: inline-block;
 	padding:1em;
@@ -341,13 +346,13 @@ h1:hover {
 
 .mainWrapper {
 	margin: 0 auto;
-	max-width: calc(660px + 2rem + 5px);
+	max-width: calc(480px + 2rem);
 	text-align: center;
 }
 
 .subWrapper {
 	clear: both;
-	display: inline-block;
+	display: block;
 	margin: 0 auto;
 	padding: 0 1rem 1rem 1rem;
 	width: calc(100% - 2rem);
@@ -522,6 +527,7 @@ span.says,
 
 .form-submit {
     text-align: center;
+    width: 100%;
 }
 
 ol.commentlist {
@@ -563,7 +569,7 @@ ol.commentlist {
 }
 
 #sidebar {
-	display: inline-block;
+	display: block;
 	margin: 0 auto;
 	padding-top: 1em;
 	overflow: hidden;
@@ -651,16 +657,26 @@ ol.commentlist {
 	z-index: 9999;
 	position: fixed;
 	bottom: 0;
-	left: 0;
+	left: unset;
+	clear: both;
+	background-color: #fff;
+	width: 100%;
+	height: 50px;
+	border-top: 7px dashed #000;
+}
+
+#socialShareWrapper div.socialShare {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    text-align: center;
 }
 
 #socialShareWrapper div.socialShare div {
-	z-index: 9999;
 	display: block;
-	list-style-type: none;
-	height: 30px;
-	width: 30px;
-	background-color: #fff;
+	float: left;
+	border: 0;
 }
 
 #socialShareWrapper div.socialShare div:hover {
@@ -690,6 +706,11 @@ ol.commentlist {
 
 /*Footer*/
 
+.social,
+.copyright {
+	text-align: center;
+}
+
 .social {
 	float: left;
 	padding: 2em;
@@ -703,7 +724,6 @@ ol.commentlist {
 	padding: 1em;
 	width: 100%;
 	color: #fff;
-	text-align: right;
 	font-size: 1rem;
 }
 
@@ -737,81 +757,81 @@ ol.commentlist {
 	text-align: center;
 }
 
-
 /*Media queries*/
 
-@media all and (max-width: 1024px) { 
-	
+@media (min-width: 576px) {
+
+	#header h1 {
+		font-size: 3rem;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	.form-submit {
+		width: 100%;
+	}
+
+	.social {
+		text-align: left;
+	}
+
+	.copyright {
+		text-align: right;
+	}
 }
 
-@media all and (max-width: 839px) {  
+@media (min-width: 768px) {
 
+}
+
+@media (min-width: 992px) {
 	.mainWrapper {
 		margin: 0 auto;
-		max-width: calc(480px + 2rem);
+		max-width: calc(660px + 2rem + 5px); /*AMEND*/
 		text-align: center;
 	}
 
 	.subWrapper {
-		display: block;
+		display: inline-block;
 	}
 
 	#sidebar {
-		display: block;
+		display: inline-block;
 	}
 
 	footer {
-		padding-bottom:  calc(57px + 1rem + 4em);
+		padding-bottom: 1em;
 	}
 
 	#socialShareWrapper {
-		left: unset;
-		clear: both;
-		background-color: #fff;
+		left: 0;
+		clear: none;
+		background-color: #f70d8a;
 		width: 100%;
-   		height: 50px;
-   		border-top: 7px dashed #000;
+		height: unset;
+		border-top: 0;
 	}
 
 	#socialShareWrapper div.socialShare {
 	    display: block;
-	    margin: 0 auto;
-	    width: 200px;
-	    height: 50px;
-	    text-align: center;
+	    margin: 0;
+	    width: unset;
+	    height: unset;
+	    text-align: left;
 	}
 
 	#socialShareWrapper div.socialShare div {
+		z-index: 9999;
 		display: block;
-		float: left;
+		float: none;
 		border: 0;
+		list-style-type: none;
+		background-color: #fff;
 	}
-} 
+}
 
-@media screen and (max-width: 480px){
+@media (min-width: 1200px) {
 
-	#header h1 {
-		font-size: 2rem;
-	}
-
-	h1 {
-		font-size: 1.5rem;
-	}
-
-	.separator {
-		width: 100%;
-	}
-
-	p.comment-form-comment textarea,
-	p.comment-form-author input {
-		width: 100%;
-	}
-
-	.form-submit {
-	    width: 100%;
-	}
-	.social,
-	.copyright {
-		text-align: center;
-	}
 }
