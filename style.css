@@ -235,6 +235,15 @@ h1:hover {
 	visibility: visible;
 }
 
+.menu li:before {
+    content: "";
+    display: block;
+    visibility: inherit;
+    margin: 0 auto;
+    border-top: 1px dashed white;
+    width: 90%;
+}
+
 .menu li {
 	display: block;
     visibility: inherit;
@@ -304,7 +313,7 @@ h1:hover {
 
 .diamondPink:after {
 	z-index: 1;
-	content: '';
+	content: "";
  	position: absolute;
  	left: -10px;
  	top: 10px;
@@ -328,7 +337,7 @@ h1:hover {
 
 .diamondBlack:after {
 	z-index: 1;
-	content: '';
+	content: "";
  	position: absolute;
  	left: -10px;
  	top: 10px;
