@@ -27,7 +27,7 @@ add_action( 'wp_enqueue_scripts', 'poetry_laboetry_add_theme_functions' );
 
 //Load menu
 function poetry_laboetry_menu_register() {
-    register_nav_menu('header-menu', __( 'Header Menu', 'poetry_laboetry' ));
+    register_nav_menu('header-menu', __( 'Header Menu', 'poetry-laboetry' ));
 }
 add_action( 'init', 'poetry_laboetry_menu_register' );
 
