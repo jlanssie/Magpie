@@ -6,7 +6,7 @@
 
 				<?php the_content(); ?>
 
-				<?php esc_url( wp_link_pages( $linkPages ) ); ?>
+				<!--<?php esc_url( wp_link_pages( $linkPages ) ); ?>-->
 
 			</article>
 			<p class="metaContent sansSerif"><?php echo __('By ', 'poetry-laboetry'); the_author(); ?></p>

@@ -11,7 +11,7 @@
 <div class="mainWrapper">
 	<div class="subWrapper">
 
-	<?php the_tags( $sep, $after ); ?> 
+	<?php the_tags( $after ); ?> 
 
 	<?php comments_template(); ?>
 

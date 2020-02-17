@@ -2,7 +2,7 @@
 Theme Name: Poetry Laboetry
 Theme URI: https://github.com/jlanssie/poetry-laboetry
 Description: A simple Wordpress theme for blogs
-Version: 1.1
+Version: 1.6
 
 Author: Jeremy Lanssiers
 Author URI: https:www.jeremylanssiers.com
@@ -567,8 +567,7 @@ ol.commentlist {
 }
 
 #submit:hover {
-	background-color: #000;
-	color: #fff;
+	background-color: #fff;
 }
 
 /*Sidebar*/

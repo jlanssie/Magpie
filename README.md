@@ -1,9 +1,14 @@
 === Poetry Laboetry Wordpress Theme ===
 
-Contributors: Jeremy Lanssiers
-Tested up to: 5.0
+Contributors: jlanssie
+Donate link: paypal.me/jlanssie
+Requires at least: 5.0
+Tested up to: 5.3.2
+Requires PHP: 5.6
+Stable tag: 1.5
 License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
 
 
 == Installation ==
@@ -12,6 +17,32 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 2. Activate the theme
 
 All theme specific options are handled through the WordPress Customizer.
+
+
+
+== Frequently Asked Questions ==
+
+No frequently asked questions yet
+
+
+
+== Changelog ==
+
+= 1.6 = 
+Updates concerning WP conformity
+
+
+
+== Upgrade Notice ==
+
+No upgrade notice yet
+
+
+
+== Screenshots ==
+
+No screenshots yet
+
 
 
 == Copyright notice ==
